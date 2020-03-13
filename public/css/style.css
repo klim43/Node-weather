@@ -1,0 +1,166 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    text-align: left;
+    height: 8vh;
+    margin: 4vh;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #cccccc;
+}
+.holder{
+    margin: 4vh;
+}
+.searchForm{
+    height: 40px;
+    width: 200px;
+    border: solid 1px #cccccc;
+    text-indent: 10px;
+}
+.searchButton{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #000100;
+    color: #cccccc;
+}
+.error{
+    font-size: 40px;
+    height: 82vh;
+    line-height: 82vh;
+}
+.msg{
+    text-align: center;
+    margin-top: -35vh;
+    font-size: 15px;
+}
+
+#search{
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  margin-top: 16%;
+}
+/*Nav Bar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  nav {
+    color: black;
+    height: 10vh;
+    background: transparent;
+    margin: 35px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-links li a:hover{
+    font-size: 19px;
+    font-weight: 200;
+  }
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .space{
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .line {
+      width: 25px;
+      height: 3px;
+      background: black;
+      margin: 5px;
+    }
+    .line-2 {
+      width: 12.5px;
+      height: 3px;
+      background: black;
+      margin: 5px;
+      margin-top: 0px;
+      float: right;
+    }
+    nav {
+      margin: 0px;
+      position: relative;
+    }
+    .space{
+      display: unset;
+    }
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      margin: 10px;
+    }
+  
+    .nav-links {
+      position: fixed;
+      background: transparent;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      background: #85C1E9;
+    }
+    .landing {
+      flex-direction: column;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .nav-links li a {
+      font-size: 25px;
+    }
+    .nav-links li a:hover {
+      font-size: 27px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+  }
+  
